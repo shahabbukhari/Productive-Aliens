@@ -56,7 +56,9 @@ function Services() {
   return (
     <section className="services">
       {Services.map((item, index) => (
-        <div className={index % 2 ? "service" : "service service-reverse"}>
+        <div
+          className={index % 2 === 0 ? "service" : "service service-reverse"}
+        >
           <div className="service-info">
             <div className="service-info-text">
               <h1 className="highlight">{item.title}</h1>

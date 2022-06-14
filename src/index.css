@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Quicksand:wght@500;700&family=Roboto:wght@400;500;700&display=swap");
 
 /* Color Pallet */
 :root {
@@ -38,8 +38,8 @@ nav {
   gap: 40px;
 }
 .nav-items ul li {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
 }
 .highlight {
   color: var(--primary-color);
@@ -68,10 +68,14 @@ header {
   gap: 20px;
   background: #0000006e;
   color: white;
-  font-size: 1.6rem;
+}
+.info h1 {
+  font-size: 36px;
+  font-weight: 700;
 }
 .info a {
-  font-size: 1.3rem;
+  font-size: 16px;
+  font-weight: 600;
   padding: 10px 20px;
 }
 .button {
@@ -90,21 +94,23 @@ header {
   font-size: 1.3rem;
 
   /* display: flex;
-  flex-direction: column; */
-  /* gap: 40px; */
-  padding: 140px 10px;
+  flex-direction: column;
+  gap: 0px /  30px; */
+  padding: 70px 10px;
 }
 .service {
   /* margin-top: 500px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
   height: 500px;
   z-index: 2;
-  margin-bottom: 60px;
+  margin: 83px auto;
+  max-width: 1280px;
 }
 .service-info {
-  flex: 0.4;
+  flex: 0.55;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -116,14 +122,30 @@ header {
   z-index: 1;
 }
 
+.service-img img {
+  object-fit: contain;
+  width: 426px;
+  height: 480px;
+}
+
 .service-info-text p {
   margin-top: 55px;
-  width: 80%;
+  width: 90%;
+  font-weight: 400;
+}
+.service-info-text p,
+.service-info-buttons a {
+  font-size: 18px;
+}
+.service-info-text h1 {
+  font-size: 36px;
+  font-weight: 500;
 }
 .service-info-buttons {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
+  font-weight: 500;
 }
 .service-img::after {
   content: "";
@@ -132,8 +154,8 @@ header {
   position: absolute;
   width: 347px;
   height: 421px;
-  right: 250px;
-  top: 90px;
+  right: 120px;
+  top: 100px;
   z-index: -1;
 
   border: 3px solid #cfb53b;
@@ -148,7 +170,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 40px 4px;
+  padding: 11px 101px;
   background-color: var(--primary-color);
 }
 .footer-about {
@@ -161,26 +183,49 @@ footer {
 }
 .footer-about h1 {
   width: 30%;
+  font-size: 24px;
+  font-weight: 500;
+
+  line-height: 29px;
+  letter-spacing: 0.03em;
 }
 .footer-about p {
   width: 50%;
-  font-size: 1.5rem;
   margin: 15px 0px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
 }
 .footer-about a {
   border-color: black;
   color: black;
-  font-weight: 600;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 .footer-links {
   flex: 0.3;
   display: flex;
   justify-content: space-between;
-  font-size: 1.3rem;
-  font-weight: 600;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
 }
 .footer-links p {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
